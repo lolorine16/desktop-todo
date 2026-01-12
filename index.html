@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>todolist</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>todolist</title>
+    <link href="./output.css" rel="stylesheet">
 
-    <body>
-        <h1>Todo list !!</h1>
-    </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="bg-background">
+
+    <div class="text-center mt-5">
+      <h1 class="text-2xl text-text mt-5">Todo list</h1>
+    </div>
+
+    <div class="mx-5">
+      <input
+        id="new-task-input"
+        type="text"
+        placeholder="Add a new task"
+        class="border border-primary text-text text-md rounded-md p-2 mt-5 w-1/3 focus:outline-none"
+      ></input>
+      <button
+        id="add-task-button"
+        class="bg-primary p-2 m-1 text-md rounded-md"
+        
+      >
+        Add
+      </button>
+    </div>
+
+    <div id="task-div" class="flex flex-col items-center mt-5">
+      <ul id="task-list" class="w-1/3">
+      <!-- Tasks will be added here dynamically -->
+      </ul>
+    </div>
+
+  </body>
+  <script src="./script.js"></script>
 </html>
